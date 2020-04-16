@@ -16,7 +16,7 @@
       <label class="form__label">
         <span class="form__label-title">Пароль</span>
         <span class="ti-eye form__label-eye" [ngClass]="{'form__label-eye_active': showPassword}" (click)="showPassword = !showPassword"></span>
-        <input [type]="showPassword ? 'text' : 'password'" class="form__control" placeholder="password" formControlName="password">
+        <input [type]="showPassword ? 'text' : 'password'" class="form__control" placeholder="Пароль" formControlName="password">
       </label>
       <button class="form__button" [disabled]="!registrationGroup.valid" (click)="onSubmit()">
         <span *ngIf="!isLoading">Регистрация</span>
