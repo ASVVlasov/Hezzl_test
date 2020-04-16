@@ -1,5 +1,4 @@
 @import "../../../../../assets/scss/variables";
-@import "../../../../../assets/scss/icons";
 
 .registration {
   display: flex;
@@ -63,9 +62,10 @@
     &.ng-valid {
       border: 2px solid #AAC72E66;
     }
-    &.ng-invalid:not(form)  {
+    &.ng-invalid:not(.form).ng-dirty  {
       border: 2px solid #E63782;
     }
+
     &:active,
     &:focus {
       outline: none;
