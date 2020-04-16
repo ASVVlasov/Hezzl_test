@@ -1,0 +1,32 @@
+@import "../../../../../assets/scss/variables";
+
+.account {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    font-size: 21px;
+    color: #313643;
+    margin-right: 20px;
+    &_empty {
+      color: #888EA7;
+    }
+  }
+  &__h2 {
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    font-size: 21px;
+    color: #888EA7;
+    margin: 0;
+  }
+  &__logout {
+    text-decoration: underline;
+    font-family: $font-family;
+    font-weight: $font-weight-light;
+    font-style: italic;
+    color: #888EA7;
+    cursor: pointer;
+  }
+}
