@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{lKKO:function(n,o,t){"use strict";t.r(o),t.d(o,"AccountModule",(function(){return e}));var r=t("ofXK"),c=t("fXoL");let e=(()=>{class n{}return n.\u0275mod=c.Hb({type:n}),n.\u0275inj=c.Gb({factory:function(o){return new(o||n)},imports:[[r.b]]}),n})()}}]);
