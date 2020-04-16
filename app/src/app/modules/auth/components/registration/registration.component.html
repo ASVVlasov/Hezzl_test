@@ -1,0 +1,26 @@
+<div class="registration">
+  <div class="registration__container">
+    <nav class="registration__nav">
+      <a [routerLink]="['/auth/registration']" routerLinkActive="registration__nav-link_active" class="registration__nav-link">Регистрация</a>
+      <a [routerLink]="['/auth/login']" routerLinkActive="registration__nav-link_active" class="registration__nav-link">Вход</a>
+    </nav>
+    <form class="form" [formGroup]="registrationGroup">
+      <label class="form__label">
+        <span class="form__label-title">Имя</span>
+        <input type="text" class="form__control" placeholder="Alex" formControlName="userName">
+      </label>
+      <label class="form__label">
+        <span class="form__label-title">Email</span>
+        <input type="email" class="form__control" placeholder="Alex@example.ru" formControlName="email">
+      </label>
+      <label class="form__label">
+        <span class="form__label-title">Пароль</span>
+        <input type="password" class="form__control" placeholder="password" formControlName="password">
+      </label>
+      <button class="form__button" [disabled]="!registrationGroup.valid" (click)="onSubmit()">
+        <span *ngIf="!isLoading">Регистрация</span>
+        <span *ngIf="isLoading" class="ti-reload"></span>
+      </button>
+    </form>
+  </div>
+</div>
