@@ -33,7 +33,7 @@ export class RegistrationComponent implements OnInit, OnDestroy {
     this.registrationGroup = this._fb.group({
       userName:     ['', [Validators.minLength(6), Validators.required]],
       email:        ['', [Validators.pattern(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/), Validators.required]],
-      password:     ['', [Validators.minLength(6), Validators.pattern(/(\w+)?(?=[A-Z])\w+/g), Validators.required]],
+      password:     ['', [Validators.minLength(6), Validators.pattern(/^.*[A-Z]+.*$/), Validators.required]],
     });
   }
 
