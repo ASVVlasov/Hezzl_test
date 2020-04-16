@@ -14,6 +14,7 @@ export class RegistrationComponent implements OnInit, OnDestroy {
 
   registrationGroup: FormGroup;
   isLoading = false;
+  showPassword = false;
 
   private readonly destroy$ = new Subject<void>();
 

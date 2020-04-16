@@ -46,6 +46,16 @@
       font-size: 14px;
       color: #888EA7;
     }
+    &-eye {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      cursor: pointer;
+      color: #888EA7;
+      &_active {
+        color: initial;
+      }
+    }
   }
   &__control {
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -90,7 +100,7 @@
       border: none;
     }
     &:disabled {
-      opacity: 50%;
+      opacity: 0.6;
     }
   }
 
